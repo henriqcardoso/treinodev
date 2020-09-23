@@ -33,14 +33,83 @@ li {
     font-weight: bold;
 }
 
-.imagens {
+.grade {
+    padding: 110px;
     display: grid;
-    grid-template-areas:
-        "conteudo";
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px 300px;
 }
 
-.conteudo {
-       grid-area: conteudo;
+.imagem1 {
+    background: url(assets/img/wallhaven-103122.jpg) center / cover no-repeat;
+    grid-row: 1 / 3;
+}
+
+.imagem2 {
+    background: url(assets/img/wallhaven-145674.jpg) center / cover no-repeat;
+    grid-column: 2 / 4;
+}
+
+.imagem3 {
+    background: url(assets/img/wallhaven-218601.jpg) center / cover no-repeat;
+}
+
+.imagem4 {
+    background: url(assets/img/wallhaven-226805.jpg) center / cover no-repeat;
+}
+
+.imagem5 {
+    background: url(assets/img/wallhaven-3975xd.jpg) center / cover no-repeat;
+}
+
+.imagem6 {
+    background: url(assets/img/wallhaven-336935.jpg) center / cover no-repeat;
+}
+
+.imagem7 {
+    background: url(assets/img/wallhaven-439860.jpg) center / cover no-repeat;
+}
+
+.imagem8 {
+    background: url(assets/img/wallhaven-675517.jpg) center / cover no-repeat;
+}
+
+.grade2 {
+    background: tomato;
+    display: grid;
+    grid-template-areas: 
+        "topo"
+        "meio"
+        "baixo";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.topo {
+    background: tomato;
+    grid-area: topo;
+}
+
+.meio {
+    background: blueviolet;
+    grid-area: meio;
+
+}
+
+.baixo {
+    background: green;
+    grid-area: baixo;
+
+}
+
+@media(max-width: 768px){
+    .cabecalhoNav {
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal .container{
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
 }
