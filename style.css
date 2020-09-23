@@ -32,3 +32,15 @@ li {
     color: tomato;
     font-weight: bold;
 }
+
+.imagens {
+    display: grid;
+    grid-template-areas:
+        "conteudo";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px;
+}
+
+.conteudo {
+       grid-area: conteudo;
+}
