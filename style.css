@@ -17,21 +17,23 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.cabecalhoNav {
+    display: flex;
+   
+}
 
 .cabecalhoNav a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-}
-
-li {
-    margin-left: 20px;
+.estilomenu {
     color: tomato;
+    margin-left: 10px;
     font-weight: bold;
 }
+
+
+
 
 .grade {
     padding: 110px;
@@ -103,7 +105,13 @@ li {
 
 }
 
-@media(max-width: 768px){
+@media screen and (min-width: 0) {
+    .cabecalhoNav {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
     .cabecalhoNav {
         flex-direction: column;
     }
@@ -111,5 +119,12 @@ li {
         flex-direction:column;
         align-items: center;
         text-align: center;
+    }
+    .estilomenu {
+        margin-bottom: 10px;
+    }
+
+    .imagem1 {
+        grid-row: 1 / 1;
     }
 }
